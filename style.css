@@ -128,5 +128,60 @@ body {
       transform: translateX(-100%);
   }
   }
+
+  /* Curriculum Section style start */
+.curriculum {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  background-image: url("images/bg.png");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  }
+  
+  .curriculum h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  }
+  
+  .curriculum-cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  }
+  
+  .card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  gradient-background: linear-gradient(to bottom, #69603e, #c4aa43);
+  }
+  
+  .card img {
+  max-width: 60px;
+  margin-bottom: 15px;
+  }
+  
+  .card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  }
+  
+  .card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+  }
+  
+  .card .btn-read-more {
+  color: #23a6f0;
+  font-weight: bold;
+  }
+  
+  
   
   
