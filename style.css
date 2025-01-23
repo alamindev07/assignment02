@@ -1,0 +1,83 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  main {
+    margin: auto;
+    max-width: 1200px;
+  }
+  
+  h1, h2, h3 {
+    margin: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  .navbar-one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+  }
+  
+  .nav-links a {
+    color: #333;
+    font-size: 16px;
+  }
+ .home-link a {
+    color: #fda92d;
+ }
+ .about-link a {
+    color: #23a6f0;
+ }
+ .Facilities-link a {
+    color: rgb(41, 238, 189);
+ }
+ .admission-link a {
+    color: rgb(103, 34, 231);
+ }
+   .btn-contact {
+    background-color: #fda92d;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 250px;
+  }
+  .hamburger{
+        display: none;
+      }
+ 
+
+  @media (max-width: 380px) {
+    .navlinks{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+      }
+  }
+
+  
