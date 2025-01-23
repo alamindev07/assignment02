@@ -1,187 +1,448 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-  }
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
 
-  main {
-    margin: auto;
-    max-width: 1200px;
-  }
-  
-  h1, h2, h3 {
-    margin: 0;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  /* Navbar Styles */
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-  }
+main {
+  margin: auto;
+  max-width: 1200px;
+}
 
-  .navbar-one{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .navbar .logo {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .nav-links {
-    display: flex;
-    list-style: none;
-    gap: 40px;
-  }
-  
-  .nav-links a {
-    color: #333;
-    font-size: 16px;
-  }
- .home-link a {
-    color: #fda92d;
- }
- .about-link a {
-    color: #23a6f0;
- }
- .Facilities-link a {
-    color: rgb(41, 238, 189);
- }
- .admission-link a {
-    color: rgb(103, 34, 231);
- }
-   .btn-contact {
-    background-color: #fda92d;
-    color: white;
-    padding: 8px 12px;
-    border-radius: 5px;
-    border: none;
-    margin-left: 250px;
+h1, h2, h3 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar-one{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+.nav-links a {
+  color: #333;
+  font-size: 16px;
+}
+.home-link a {
+  color: #fda92d;
+}
+.about-link a {
+  color: #23a6f0;
+}
+.Facilities-link a {
+  color: rgb(41, 238, 189);
+}
+.admission-link a {
+  color: rgb(103, 34, 231);
+}
+ .btn-contact {
+  background-color: #fda92d;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  margin-left: 250px;
+}
+.hamburger{
+      display: none;
+    }
+
+
+@media (max-width: 380px) {
+  .navlinks{
+      display: none;
   }
   .hamburger{
-        display: none;
-      }
- 
-
-  @media (max-width: 380px) {
-    .navlinks{
-        display: none;
+      display: block;
     }
-    .hamburger{
-        display: block;
-      }
-  }
+}
 
-  
+
 /*horizontal line style start*/
 .horizontal-line{
-  width: 100%; 
-  height: 2px; 
-  background-color: #f5900c; 
-  margin: 20px 0; 
-  display: none;
-  }
-  @media (max-width: 360px) {
-  .horizontal-line{
-  display: block;
-  }
-  }
-  
-  .card-content p {
-  font-size: 14px;
-  color: #666666;
-  line-height: 1.6;
-  }
-  
-  .card-text{
-  margin-top: 10px;
-  
-  }
-  /*marquee section start*/
-  .marquee-container {
-  width: 100%;
-  overflow: hidden;
-  background-color: #00aaff;
-  color: #e61e10;
-  padding: 10px 0;
-  }
-  
-  .marquee {
-  display: inline-block;
-  white-space: nowrap;
-  animation: scroll-left 10s linear infinite;
-  }
-  
-  @keyframes scroll-left {
-  0% {
-      transform: translateX(100%);
-  }
-  100% {
-      transform: translateX(-100%);
-  }
-  }
+width: 100%; 
+height: 2px; 
+background-color: #f5900c; 
+margin: 20px 0; 
+display: none;
+}
+@media (max-width: 360px) {
+.horizontal-line{
+display: block;
+}
+}
 
-  /* Curriculum Section style start */
-.curriculum {
+.card-content p {
+font-size: 14px;
+color: #666666;
+line-height: 1.6;
+}
+
+.card-text{
+margin-top: 10px;
+
+}
+/*marquee section start*/
+.marquee-container {
+width: 100%;
+overflow: hidden;
+background-color: #00aaff;
+color: #e61e10;
+padding: 10px 0;
+}
+
+.marquee {
+display: inline-block;
+white-space: nowrap;
+animation: scroll-left 10s linear infinite;
+}
+
+@keyframes scroll-left {
+0% {
+    transform: translateX(100%);
+}
+100% {
+    transform: translateX(-100%);
+}
+}
+
+
+
+
+
+.hero {
+display: flex;
+flex-direction: row;
+align-items: center;
+/* justify-content:   space-between; */
+padding: 20px;
+background-color: #fff;
+text-align: left;
+}
+
+.hero-content h1 {
+font-size: 36px;
+color: #333;
+text-align: left;
+
+}
+.span1{
+color: #ffff00;
+}
+.span2{
+color: #23a6f0;
+}
+
+.hero-content p {
+margin: 20px 0;
+color: #555;
+text-align: left;
+}
+
+.btn-enroll {
+background-color: #23a6f0;
+color: white;
+padding: 10px 20px;
+border-radius: 5px;
+;
+}
+
+.hero-image img {
+max-width: 100%;
+height: auto;
+}
+
+/* Responsive Styles  for hero section*/
+@media (max-width: 360px) {
+.hero {
+flex-direction: column-reverse;
+text-align: center;
+align-items: center;
+
+}
+.hero-content h1 {
+  font-size: 36px;
+  color: #333;
   text-align: center;
-  padding: 40px 20px;
-  background-color: #f9f9f9;
-  background-image: url("images/bg.png");
-  background-repeat: no-repeat;
-  object-fit: cover;
-  background-size: cover;
-  }
   
-  .curriculum h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
   }
-  
-  .curriculum-cards {
-  display: flex;
-  justify-content: space-around;
-  gap: 20px;
+  .span1{
+  color: #ffff00;
   }
-  
-  .card {
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-  text-align: center;
-  max-width: 300px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  gradient-background: linear-gradient(to bottom, #69603e, #c4aa43);
-  }
-  
-  .card img {
-  max-width: 60px;
-  margin-bottom: 15px;
-  }
-  
-  .card h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  }
-  
-  .card p {
-  font-size: 14px;
-  color: #666;
-  margin-bottom: 15px;
-  }
-  
-  .card .btn-read-more {
+  .span2{
   color: #23a6f0;
-  font-weight: bold;
   }
   
-  
-  
-  
+  .hero-content p {
+  margin: 20px 0;
+  color: #555;
+  text-align: center;
+  }
+.hero-image {
+margin-top: 20px;
+}
+
+.curriculum-cards {
+flex-direction: column;
+align-items: center;
+}
+
+.card {
+max-width: 90%;
+}
+}
+
+/* Curriculum Section style start */
+.curriculum {
+text-align: center;
+padding: 40px 20px;
+background-color: #f9f9f9;
+background-image: url("images/bg.png");
+background-repeat: no-repeat;
+object-fit: cover;
+background-size: cover;
+}
+
+.curriculum h2 {
+font-size: 28px;
+margin-bottom: 20px;
+}
+
+.curriculum-cards {
+display: flex;
+justify-content: space-around;
+gap: 20px;
+}
+
+.card {
+background-color: white;
+padding: 20px;
+border-radius: 8px;
+text-align: center;
+max-width: 300px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+gradient-background: linear-gradient(to bottom, #69603e, #c4aa43);
+}
+
+.card img {
+max-width: 60px;
+margin-bottom: 15px;
+}
+
+.card h3 {
+font-size: 20px;
+margin-bottom: 10px;
+}
+
+.card p {
+font-size: 14px;
+color: #666;
+margin-bottom: 15px;
+}
+
+.card .btn-read-more {
+color: #23a6f0;
+font-weight: bold;
+}
+
+
+
+
+
+
+/* Carousel Controls *//* Hide carousel in mobile view */
+@media (max-width: 360px) {
+.careousel{
+display: none;
+}
+}
+
+
+.carousel-controls {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px; /* Space between buttons */
+margin-top: 20px; /* Adjust spacing from other sections */
+}
+
+.control {
+width: 40px;
+height: 40px;
+background-color: #fda92d; /* Orange color */
+border: none;
+border-radius: 50%; /* Makes the button circular */
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+font-size: 20px;
+cursor: pointer;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds slight shadow */
+transition: transform 0.2s, background-color 0.3s; /* Smooth effect */
+}
+
+.control:hover {
+background-color: #e58a00; /* Darker orange on hover */
+transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+
+
+/* our section main part start*/
+
+/* Card Container */
+.our-card {
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+background-color: #ffffff;
+}
+
+/* Card Image Section */
+.card-image {
+position: relative;
+
+}
+
+.card-image img {
+width: 100%;
+display: block;
+border-radius: 10px 10px 0 0;
+
+}
+
+/* Date Positioning */
+.card-date {
+position: absolute;
+bottom: -10px;
+left: 30px;
+background-color: #00c08b;
+color: #ffffff;
+padding: 5px 10px;
+border-radius: 20px;
+font-size: 12px;
+font-weight: bold;
+}
+
+/* Card Content Section */
+.card-content {
+padding: 20px;
+}
+
+.card-content h3 {
+font-size: 18px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.card-content p {
+font-size: 14px;
+color: #666666;
+line-height: 1.6;
+}
+
+.card-text{
+margin-top: 10px;
+
+}
+/* our story Section Style start */
+.our-stories {
+padding: 40px;
+text-align: center;
+background: linear-gradient(to bottom, #fff, #f7eec8);
+}
+
+.section-title {
+font-size: 28px;
+margin-bottom: 20px;
+color: #333;
+}
+
+/* Grid Layout */
+.story-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 20px;
+margin-bottom: 30px;
+}
+
+.story-card {
+background: #fff;
+border-radius: 10px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+overflow: hidden;
+text-align: left;
+}
+
+.story-card img {
+width: 100%;
+height: auto;
+}
+
+.story-card .story-date {
+display: inline-block;
+background-color: #3dc28a;
+color: #fff;
+padding: 5px 10px;
+font-size: 12px;
+margin: 10px;
+border-radius: 5px;
+}
+
+.story-card h3 {
+font-size: 18px;
+margin: 10px;
+}
+
+.story-card p {
+font-size: 14px;
+margin: 10px;
+color: #555;
+}
+
+/* Small Story Cards */
+.story-card.small h3 {
+font-size: 16px;
+margin: 10px;
+}
+
+/* View All Button */
+.view-all-btn {
+padding: 10px 20px;
+font-size: 16px;
+color: #fff;
+background-color: #000;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+.view-all-btn:hover {
+background-color: #444;
+}
+
+
+
+
