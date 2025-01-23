@@ -399,18 +399,24 @@ border-radius: 10px;
   .our-card {
     display: none;
     }
-
-    /* .story-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr); 
-      gap: 20px;
-      } */
-
     .grid-part-two{
       display: grid;
       grid-template-columns: repeat(2, 1fr); 
       gap: 20px;
     }
+    .card-date {
+      position: absolute;
+      bottom: -10px;
+      left: 20px;
+      background-color: #00c08b;
+      color: #ffffff;
+      padding: 5px 10px;
+      height: 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: bold;
+      text-align: center;
+      }
   }
 
 /* grid-part-two  */
